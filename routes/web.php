@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // test micro un deux je suis pas un heros elias regard moi bien ier jai casser 6 bouches
-
-
-Route::get('/', function () {
+route::get('/', function () {
     return view('welcome');
 });
 
