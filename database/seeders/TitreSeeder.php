@@ -13,6 +13,6 @@ class TitreSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }

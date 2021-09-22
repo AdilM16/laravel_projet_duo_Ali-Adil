@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,8 +25,7 @@
 </head>
 
 <body id="page-top" class="regular-navigation">
-    <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
@@ -42,34 +41,35 @@
                 @endauth
             </div>
         @endif
-            @yield('content')
-        
-    <script src="{{ asset('js/jquery.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/plugins.js') }}"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="{{ asset('js/init.js') }}"></script>
+    </div>
+        @yield('content')
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/plugins.js') }}"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="{{ asset('js/init.js') }}"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            'use strict';
-            jQuery('#headerwrap').backstretch([
-                "/img/bg/bg1.jpg",
-                "/img/bg/bg2.jpg",
-                "/img/bg/bg3.jpg",
-            ], {
-                duration: 8000,
-                fade: 500
+        <script type="text/javascript">
+            $(document).ready(function() {
+                'use strict';
+                jQuery('#headerwrap').backstretch([
+                    "/img/bg/bg1.jpg",
+                    "/img/bg/bg2.jpg",
+                    "/img/bg/bg3.jpg",
+                ], {
+                    duration: 8000,
+                    fade: 500
+                });
             });
-        });
-    </script>
+        </script>
 
 </body>
 
