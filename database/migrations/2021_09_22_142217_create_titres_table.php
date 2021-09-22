@@ -15,6 +15,7 @@ class CreateTitresTable extends Migration
     {
         Schema::create('titres', function (Blueprint $table) {
             $table->id();
+            $table->string('btn1');
             $table->timestamps();
         });
     }
