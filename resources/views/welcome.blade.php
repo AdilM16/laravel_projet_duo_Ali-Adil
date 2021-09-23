@@ -7,6 +7,7 @@
     @include('partials.chef')
     @include('partials.testimonial')
     @include('partials.booktable')
+    @include('partials.commentaires')
     @include('partials.map')
     @include('partials.footer')
 @endsection
