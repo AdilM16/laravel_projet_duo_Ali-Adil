@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             ChefSeeder::class,
             BooktableSeeder::class,
             BookmenuSeeder::class,
+            UsersSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
     }

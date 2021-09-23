@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
-class FooterSeeder extends Seeder
+class Users extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,8 +15,10 @@ class FooterSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('footers')->insert([
-            ['btn1'=> 'Copyright 2019. Designed by DISTINCTIVE THEMES']
+        DB::table('users')->insert([
+            'name' => 'Admin',
+            'email' => 'admin@root.com',
+            'password' => Hash::make('admin')
         ]);
     }
 }
