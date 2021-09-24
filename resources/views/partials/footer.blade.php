@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-12 wow fadeIn mb30" data-wow-delay="0.2s">
-                    <span class="copyright">Copyright 2019. Designed by DISTINCTIVE THEMES</span>
+                    <span class="copyright">{{$data7[0]->btn1}}</span>
                 </div>
                 <div class="col-md-12">
                     <ul class="list-inline social-links wow fadeIn" data-wow-delay="0.2s">

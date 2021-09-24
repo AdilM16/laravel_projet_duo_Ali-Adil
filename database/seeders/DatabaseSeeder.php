@@ -17,14 +17,13 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             FooterSeeder::class,
             TestimonialSeeder::class,
-            TitreSeeder::class,
             NavSeeder::class,
             MapSeeder::class,
             HeaderSeeder::class,
             ChefSeeder::class,
             BooktableSeeder::class,
             BookmenuSeeder::class,
-            UsersSeeder::class,
+            UserSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
     }
