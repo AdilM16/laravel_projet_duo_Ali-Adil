@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 route::get('/', function () {
     return view('welcome');
 });
-route::get('/1', '\App\Http\Controllers\ViewController@hn');
+// route::get('/1', '\App\Http\Controllers\ViewController@hn');
 // Route::middleware(['auth'])->group(function (){
 
 // });

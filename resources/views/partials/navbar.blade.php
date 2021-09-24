@@ -43,19 +43,27 @@
                 <li><a href="#about" class="page-scroll">Specials</a></li>
                 <li><a href="#the-menu" class="page-scroll">Our Menu</a></li>
                 <li><a href="#about" class="page-scroll">Book a Table</a></li>
-                @if (Route::has('login'))
-                        @auth
-                            <li><a href="{{ url('/dashboard') }}"
-                                class="page-scroll">Dashboard</a></li>
-                        @else
-                        <li> <a href="{{ route('login') }}" class="page-scroll">Log in</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-power-off"></i><span class="pe-7s-angle-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        @if (Route::has('login'))
+                                @auth
+                                    <li><a href="{{ url('/dashboard') }}"
+                                        class="page-scroll">Dashboard</a></li>
+                                @else
+                                <li> <a href="{{ route('login') }}" class="page-scroll">Log in</a></li>
 
-                            @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}"
-                                    class="ml-4 page-scroll">Register</a></li>
-                            @endif
-                        @endauth
-                @endif
+                                    @if (Route::has('register'))
+                                    <li><a href="{{ route('register') }}"
+                                            class="ml-4 page-scroll">Register</a></li>
+                                    @endif
+                                @endauth
+                        @endif
+                    </ul>
+                </li>
+                <li><a href="#search"><i class="fa fa-search"></i></a></li>
+            </ul>
+                
             </ul>
 
         </div>
