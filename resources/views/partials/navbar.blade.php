@@ -17,7 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand smoothie" href="">{{$data1[0]->titre1}} <span class="theme-accent-color">{{$data1[0]->titre2}} </span></a>
+            <a class="navbar-brand smoothie" href="">{{$data1[0]->titre1}} <span class="theme-accent-color">{{$data1[0]->titre2}}</span></a>
         </div>
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     @if (Route::has('login'))
@@ -43,19 +43,27 @@
                 <li><a href="#about" class="page-scroll">{{$data1[0]->btn2}} </a></li>
                 <li><a href="#the-menu" class="page-scroll">{{$data1[0]->btn3}} </a></li>
                 <li><a href="#about" class="page-scroll">{{$data1[0]->btn4}} </a></li>
-                @if (Route::has('login'))
-                        @auth
-                            <li><a href="{{ url('/dashboard') }}"
-                                class="page-scroll">Dashboard</a></li>
-                        @else
-                        <li> <a href="{{ route('login') }}" class="page-scroll">{{$data1[0]->btn5}} </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-power-off"></i><span class="pe-7s-angle-down"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        @if (Route::has('login'))
+                                @auth
+                                    <li><a href="{{ url('/dashboard') }}"
+                                        class="page-scroll">Dashboard</a></li>
+                                @else
+                                <li> <a href="{{ route('login') }}" class="page-scroll">{{$data1[0]->btn5}}</a></li>
 
-                            @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}"
-                                    class="ml-4 page-scroll">{{$data1[0]->btn6}} </a></li>
-                            @endif
-                        @endauth
-                @endif
+                                    @if (Route::has('register'))
+                                    <li><a href="{{ route('register') }}"
+                                            class="ml-4 page-scroll">{{$data1[0]->btn6}}</a></li>
+                                    @endif
+                                @endauth
+                        @endif
+                    </ul>
+                </li>
+                <li><a href="#search"><i class="fa fa-search"></i></a></li>
+            </ul>
+                
             </ul>
 
         </div>

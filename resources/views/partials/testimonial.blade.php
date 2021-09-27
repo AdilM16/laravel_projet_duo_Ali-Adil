@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb100">
-                    <h2 class="section-heading">{{$data5[0]->titre1}} <span class="theme-accent-color">{{$data5[0]->titre2}}</span> {{$data5[0]->titre3}}</h2>
+                    <h2 class="section-heading">{{$data5[0]->titre1}} <span class="theme-accent-color">{{$data5[0]->titre2}}</span>{{$data5[0]->titre3}}</h2>
                     <hr class="thin-hr">
                     <h3 class="section-subheading secondary-font">{{$data5[0]->btn1}}</h3>
                 </div>
