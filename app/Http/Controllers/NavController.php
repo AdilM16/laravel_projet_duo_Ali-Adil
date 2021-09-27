@@ -14,7 +14,7 @@ class NavController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**

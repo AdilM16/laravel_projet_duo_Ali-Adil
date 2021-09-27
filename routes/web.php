@@ -38,3 +38,18 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+Route::resource('backofficenav', NavController::class);
+
+Route::resource('backofficeheader', HeaderController::class);
+
+Route::resource('backofficebookmenu', BookmenuController::class);
+
+Route::resource('backofficechef', ChefController::class);
+
+Route::resource('backofficetestimonial', TestimonialController::class);
+
+Route::resource('backofficebooktable', BooktableController::class);
+
+Route::resource('backofficefooter', FooterController::class);
